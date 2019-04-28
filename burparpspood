@@ -2,14 +2,17 @@
 #Creator: Jamell Tyson
 #Date: 4/24/2019
 #This will enable your attacking machine to route traffic. This way, when your 
-#victim machine makes a request to an external HTTP server you will forward the #request and intercept the server’s response. This behavior is necessary for #credential harvesting attacks. In order to use this script effective the 
+#victim machine makes a request to an external HTTP server you will forward the 
+#request and intercept the server’s response. This behavior is necessary for 
+#credential harvesting attacks. In order to use this script effective the 
 #attacker should configure burp suite as follows:
 #Step 1: Click on the proxy tab and then click on the options sub-tab.
 #Step 2: Click the add button and type ‘443’ for the bind port.
 #Step 3: Select the all interfaces radio button.
 #Step 4: Click on the request handling tab and check the invisible proxy 
 #support box.
-#Step 5: If you've purchased or otherwise acquired an SSL certificate you #can configure it on the certificate tab. If not, leave those settings the way 
+#Step 5: If you've purchased or otherwise acquired an SSL certificate you 
+#can configure it on the certificate tab. If not, leave those settings the way 
 #they are. Repeat the above steps for port ’80’ as well.
 echo 1 > /proc/sys/net/ipv4/ip_forward
 echo "please enter your IP address"
